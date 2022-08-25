@@ -1,0 +1,70 @@
+#element-price-table .price-chart-wrapper {
+    padding: 20px 0;
+  }
+  #element-price-table .price-chart {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-spacing: 0;
+  }
+  #element-price-table .price-chart td.cell {
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    word-break: break-word;
+  }
+  #element-price-table .price-chart td.cell div.paragraph {
+    text-align: center;
+    width: 90%;
+    margin: 0 5%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  #element-price-table .price-chart td.cell {
+    width: 33.333333333333%;
+  }
+  #element-price-table .price-chart tr:first-child td {
+    background-color: #ffffff;
+  }
+  #element-price-table .price-chart tr:first-child td .paragraph {
+    font-weight: 700;
+  }
+  #element-price-table .price-chart tr:last-of-type td {
+    border-bottom: none;
+  }
+  #element-price-table .price-chart td:last-of-type {
+    border-right: none;
+  }
+  #element-price-table .price-chart .price td {
+    border-bottom: 0;
+  }
+  #element-price-table .price-chart .price td div.paragraph {
+    font-weight: 700;
+    font-size: 300%;
+    padding: 0 auto;
+    color: #222222;
+  }
+  #element-price-table .price-chart .price td div.paragraph:not(:empty)::before {
+    content: '$';
+    font-size: 50%;
+    vertical-align: super;
+  }
+  #element-price-table .price-chart .rate td div.paragraph {
+    padding-top: 0;
+    margin-top: -10px;
+  }
+  #element-price-table .price-chart .buttons-bottom .element,
+  #element-price-table .price-chart .buttons-bottom .cell > div,
+  #element-price-table .price-chart .buttons-middle .element,
+  #element-price-table .price-chart .buttons-middle .cell > div {
+    text-align: center;
+  }
+  #element-price-table .price-chart.buttonLocation-Bottom .buttons-middle {
+    display: none;
+  }
+  #element-price-table .price-chart.buttonLocation-Top .rate td,
+  #element-price-table .price-chart.buttonLocation-Top {
+    border-bottom: none;
+  }
+  #element-price-table .price-chart.buttonLocation-Top .buttons-bottom {
+    display: none;
+  }

@@ -332,6 +332,20 @@ strong { color: var(--text); font-weight: 600; }
 }
 .has-dropdown:hover > a::after { transform: rotate(180deg); }
 
+/* Invisible hover bridge so the mouse can travel from the link to the
+   dropdown without crossing a dead zone. Counts as part of .has-dropdown
+   for :hover, so the dropdown stays open. */
+.has-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 0.75rem;
+    background: transparent;
+    pointer-events: auto;
+}
+
 .dropdown {
     position: absolute;
     top: calc(100% + 0.5rem);

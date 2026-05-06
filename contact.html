@@ -1,136 +1,223 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>LS COMPUTER REPAIR</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="./assets/css/main.css" />
-		<link rel="icon" href="https://lscdn.site/static/logos/lspcr/lspcr.png" type="image/x-icon"/>
-        <link rel="shortcut icon" href="https://lscdn.site/static/logos/lspcr/lspcr.png" type="image/x-icon"/>
-	</head>
-	<body class="is-preload homepage">
-		<div id="page-wrapper">
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container">
-						<!-- Logo -->
-							<div id="logo">
-								<a href="./" target="_self"><img src="https://lscdn.site/static/logos/lspcr/lspcr-long.png" width="350px" alt="LSPCR Logo"></a>
-							</div>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — LS Computer Repair</title>
+    <meta name="description" content="Phone, WhatsApp, fax, e-mail and locations for LS Computer Repair and LochStudios. Reach a technician fast." />
+    <meta name="theme-color" content="#0a0e1a" />
+    <meta name="color-scheme" content="dark" />
 
-							<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="./">Home</a></li>
-									<li>
-										<a href="services.html">Services</a>
-											<ul>
-												<li><a href="remote-support.html">Remote Support</a></li>
-												<li><a href="visit-me.html">Visit Me</a></li>
-											</ul>
-									</li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</nav>
+    <link rel="icon" href="https://lscdn.site/static/logos/lspcr/lspcr.png" type="image/png" />
+    <link rel="apple-touch-icon" href="https://lscdn.site/static/logos/lspcr/lspcr.png" />
 
-					</header>
-				</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						<div id="content">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+    <link rel="stylesheet" href="./assets/css/theme.css" />
+</head>
+<body>
+    <a href="#main" class="visually-hidden">Skip to content</a>
 
-							<!-- Content -->
-						<article>
-							<div class="container">
-							<div class="wsite-section-elements">
-							<div class="wsite-spacer" style="height:50px;"></div>
-							<div>
-								<div class="wsite-multicol">
-									<div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
-											<h2>Contact Us:</h2>
-											<p style="color:#000000">
-											<strong>LOCHSTUDIOS</strong> and <strong>LS COMPUTER REPAIR</strong>
-											<br>Give us a call: (02) 5632-3092
-											<br>Send us a Fax: (02) 5632-3095
-											<br>Message us on WhatsApp: +61-480-001-064
-											<br>Contact us by e-mail:
-											<br><a href="mailto:office@lscomputerrepair.com">office@lscomputerrepair.com</a>
-											<br><a href="mailto:billing@lscomputerrepair.com">billing@lscomputerrepair.com</a>
-											<br><a href="mailto:support@lscomputerrepair.com">support@lscomputerrepair.com</a>
-										</p>
-									</div>
-									<div class="paragraph" style="text-align:left;">
-										<h4 style="color:#000000">Our locations around the world:</h4>
-										<div class="wsite-map">
-											<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1q4hQ1C1w6kmKs5sThWjyjrFSy_qZvE4&ehbc=2E312F" width="640" height="480"></iframe>
-										</div>
-									</div>
-								</div>
-								<div class="wsite-spacer" style="height:24px;"></div>
-							</div>
-							</div>
-							</div>
-						</article>
-						</div>
-					</div>
-				</div>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="./" class="nav-brand" aria-label="LS Computer Repair home">
+                <img src="https://lscdn.site/static/logos/lspcr/lspcr-long.png" alt="" />
+                <span class="visually-hidden">LS Computer Repair</span>
+            </a>
+            <nav aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="./" data-nav="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="services.html" data-nav="services.html"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
+                        <ul class="dropdown" role="menu">
+                            <li><a href="services.html"><i class="fa-solid fa-list-check"></i> All Services</a></li>
+                            <li><a href="remote-support.html"><i class="fa-solid fa-headset"></i> Remote Support</a></li>
+                            <li><a href="visit-me.html"><i class="fa-solid fa-house-laptop"></i> On-site Visit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html" data-nav="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
 
-			<!-- Footer -->
-			<div id="footer-wrapper">
-				<footer id="footer" class="container">
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-								<section class="widget links">
-									<p style="color:#000000;font-weight:normal;">
-										LOCHSTUDIOS and any of LOCHSTUDIOS subsidiaries are registered under ABN: 20 447 022 747
-									</p>
-									<p style="color:#000000;font-weight:normal;">
-										LS COMPUTER REPAIR is registered under family partnership ABN: 78 341 881 708
-									</p>
-								</section>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="./" data-nav="index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a></li>
+            <li class="group-label">Services</li>
+            <li class="submenu"><a href="services.html" data-nav="services.html">All services</a></li>
+            <li class="submenu"><a href="remote-support.html" data-nav="remote-support.html">Remote support</a></li>
+            <li class="submenu"><a href="visit-me.html" data-nav="visit-me.html">On-site visit</a></li>
+            <li class="group-label">More</li>
+            <li><a href="contact.html" data-nav="contact.html"><i class="fa-solid fa-envelope"></i>&nbsp; Contact us</a></li>
+        </ul>
+    </div>
 
-						</div>
-						<div class="col-2 col-6-medium col-12-small">
-						</div>
-						<div class="col-2 col-6-medium col-12-small">
-						<img src="https://lscdn.site/static/logos/lochstudios/4803721/4803721.png" alt="LochStudios Logo" height="200px">
-						</div>
-						<div class="col-3 col-6-medium col-12-small">
-								<section class="widget contact last">
-									<h3>Find Us</h3>
-									<ul>
-										<li><a href="https://www.facebook.com/lochstudios" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="https://twitter.com/lochstudios" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://instagram.com/lochstudiosau" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="mailto:office@lscomputerrepair.com" class="icon fas fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-								</section>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<div id="copyright">
-								<ul class="menu">
-									<li style="color:#000000">All Rights Reserved &copy; 2022 | LS COMPUTER REPAIR & LOCHSTUDIOS</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</footer>
-			</div>
+    <main id="main">
 
-		</div>
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow reveal"><i class="fa-solid fa-paper-plane"></i> Get in touch</span>
+                <h1 class="reveal">Talk to a <span class="gradient-text">real technician</span></h1>
+                <p class="reveal">Phone, WhatsApp, fax or e-mail — pick whichever's easiest. We answer fast.</p>
+            </div>
+        </section>
 
-	<!-- Scripts -->
+        <section class="section" style="padding-top:1rem;">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="reveal">
+                        <h2 style="margin-bottom:1.5rem;">Direct lines</h2>
+                        <div class="grid" style="gap:0.85rem;">
+                            <a href="tel:+61256323092" class="contact-method">
+                                <span class="icon-wrap"><i class="fa-solid fa-phone"></i></span>
+                                <div>
+                                    <div class="label">Phone</div>
+                                    <div class="value">(02) 5632-3092</div>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/61480001064" class="contact-method">
+                                <span class="icon-wrap"><i class="fa-brands fa-whatsapp"></i></span>
+                                <div>
+                                    <div class="label">WhatsApp</div>
+                                    <div class="value">+61 480 001 064</div>
+                                </div>
+                            </a>
+                            <div class="contact-method">
+                                <span class="icon-wrap"><i class="fa-solid fa-fax"></i></span>
+                                <div>
+                                    <div class="label">Fax</div>
+                                    <div class="value">(02) 5632-3095</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-		<script src="./assets/js/jquery.min.js"></script>
-		<script src="./assets/js/jquery.dropotron.min.js"></script>
-		<script src="./assets/js/browser.min.js"></script>
-		<script src="./assets/js/breakpoints.min.js"></script>
-		<script src="./assets/js/util.js"></script>
-		<script src="./assets/js/main.js"></script>
+                    <div class="reveal">
+                        <h2 style="margin-bottom:1.5rem;">E-mail us</h2>
+                        <div class="grid" style="gap:0.85rem;">
+                            <a href="mailto:office@lscomputerrepair.com" class="contact-method">
+                                <span class="icon-wrap"><i class="fa-solid fa-envelope-open-text"></i></span>
+                                <div>
+                                    <div class="label">General enquiries</div>
+                                    <div class="value">office@lscomputerrepair.com</div>
+                                </div>
+                            </a>
+                            <a href="mailto:billing@lscomputerrepair.com" class="contact-method">
+                                <span class="icon-wrap"><i class="fa-solid fa-receipt"></i></span>
+                                <div>
+                                    <div class="label">Billing</div>
+                                    <div class="value">billing@lscomputerrepair.com</div>
+                                </div>
+                            </a>
+                            <a href="mailto:support@lscomputerrepair.com" class="contact-method">
+                                <span class="icon-wrap"><i class="fa-solid fa-life-ring"></i></span>
+                                <div>
+                                    <div class="label">Support</div>
+                                    <div class="value">support@lscomputerrepair.com</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="section" style="padding-top:0;">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-map-location-dot"></i> Where we are</span>
+                    <h2>Locations around the world</h2>
+                    <p class="section-lead">Our presence beyond the workshop — past projects, on-site jobs and partner sites.</p>
+                </div>
+                <div class="reveal">
+                    <iframe
+                        class="map-frame"
+                        src="https://www.google.com/maps/d/u/1/embed?mid=1q4hQ1C1w6kmKs5sThWjyjrFSy_qZvE4&ehbc=2E312F"
+                        title="LS Computer Repair — locations map"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="callout reveal">
+                    <span class="eyebrow"><i class="fa-solid fa-clock"></i> Office hours</span>
+                    <h2>Mon — Sat, business hours.</h2>
+                    <p>After-hours? See our <a href="visit-me.html">overnight emergency call-out</a> rate, or leave a message and we'll come back to you first thing.</p>
+                    <div class="btn-row">
+                        <a href="tel:+61256323092" class="btn btn-primary btn-lg"><i class="fa-solid fa-phone-volume"></i> Call now</a>
+                        <a href="mailto:office@lscomputerrepair.com" class="btn btn-outline btn-lg"><i class="fa-solid fa-envelope"></i> Send an email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://lscdn.site/static/logos/lspcr/lspcr-long.png" alt="LS Computer Repair" />
+                    <p>Family-run computer repair, custom builds and remote support — based locally, helping nationwide.</p>
+                    <div class="social-row">
+                        <a href="https://www.facebook.com/lochstudios" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/lochstudios" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/lochstudiosau" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="mailto:office@lscomputerrepair.com" aria-label="Email us"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html"><i class="fa-solid fa-list-check"></i> All services</a></li>
+                        <li><a href="remote-support.html"><i class="fa-solid fa-headset"></i> Remote support</a></li>
+                        <li><a href="visit-me.html"><i class="fa-solid fa-house-laptop"></i> On-site visit</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get in touch</h4>
+                    <ul>
+                        <li><a href="tel:+61256323092"><i class="fa-solid fa-phone"></i> (02) 5632-3092</a></li>
+                        <li><a href="https://wa.me/61480001064"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="mailto:office@lscomputerrepair.com"><i class="fa-solid fa-envelope"></i> office@</a></li>
+                        <li><a href="mailto:support@lscomputerrepair.com"><i class="fa-solid fa-life-ring"></i> support@</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Group</h4>
+                    <ul>
+                        <li><a href="https://media.lochstudios.com/"><i class="fa-solid fa-clapperboard"></i> Media production</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-map-pin"></i> Locations</a></li>
+                    </ul>
+                    <img src="https://lscdn.site/static/logos/lochstudios/4803721/4803721.png" alt="LochStudios" style="height:60px;width:auto;margin-top:1rem;opacity:0.85;" />
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; <span data-year>2026</span> <strong>LS Computer Repair</strong> &amp; <strong>LochStudios</strong>. All rights reserved.</div>
+                <div class="abn">
+                    LOCHSTUDIOS ABN 20 447 022 747 &middot; LSPCR ABN 78 341 881 708
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js" defer></script>
+    <script src="./assets/js/app.js" defer></script>
 </body>
 </html>

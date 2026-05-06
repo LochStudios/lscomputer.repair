@@ -1,4 +1,7 @@
-<!doctype html>
+<?php
+$css_v = @filemtime(__DIR__ . '/assets/css/theme.css') ?: time();
+$js_v  = @filemtime(__DIR__ . '/assets/js/app.js')  ?: time();
+?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -17,7 +20,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
-    <link rel="stylesheet" href="./assets/css/theme.css" />
+    <link rel="stylesheet" href="./assets/css/theme.css?v=<?= $css_v ?>" />
 </head>
 <body>
     <a href="#main" class="visually-hidden">Skip to content</a>
@@ -30,16 +33,16 @@
             </a>
             <nav aria-label="Primary">
                 <ul class="nav-links">
-                    <li><a href="./" data-nav="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="./" data-nav="index.php"><i class="fa-solid fa-house"></i> Home</a></li>
                     <li class="has-dropdown">
-                        <a href="services.html" data-nav="services.html"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
+                        <a href="services.php" data-nav="services.php"><i class="fa-solid fa-screwdriver-wrench"></i> Services</a>
                         <ul class="dropdown" role="menu">
-                            <li><a href="services.html"><i class="fa-solid fa-list-check"></i> All Services</a></li>
-                            <li><a href="remote-support.html" data-nav="remote-support.html"><i class="fa-solid fa-headset"></i> Remote Support</a></li>
-                            <li><a href="visit-me.html"><i class="fa-solid fa-house-laptop"></i> On-site Visit</a></li>
+                            <li><a href="services.php"><i class="fa-solid fa-list-check"></i> All Services</a></li>
+                            <li><a href="remote-support.php" data-nav="remote-support.php"><i class="fa-solid fa-headset"></i> Remote Support</a></li>
+                            <li><a href="visit-me.php"><i class="fa-solid fa-house-laptop"></i> On-site Visit</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html" data-nav="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                    <li><a href="contact.php" data-nav="contact.php"><i class="fa-solid fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
             <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
@@ -50,13 +53,13 @@
 
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="./" data-nav="index.html"><i class="fa-solid fa-house"></i>&nbsp; Home</a></li>
+            <li><a href="./" data-nav="index.php"><i class="fa-solid fa-house"></i>&nbsp; Home</a></li>
             <li class="group-label">Services</li>
-            <li class="submenu"><a href="services.html" data-nav="services.html">All services</a></li>
-            <li class="submenu"><a href="remote-support.html" data-nav="remote-support.html">Remote support</a></li>
-            <li class="submenu"><a href="visit-me.html" data-nav="visit-me.html">On-site visit</a></li>
+            <li class="submenu"><a href="services.php" data-nav="services.php">All services</a></li>
+            <li class="submenu"><a href="remote-support.php" data-nav="remote-support.php">Remote support</a></li>
+            <li class="submenu"><a href="visit-me.php" data-nav="visit-me.php">On-site visit</a></li>
             <li class="group-label">More</li>
-            <li><a href="contact.html" data-nav="contact.html"><i class="fa-solid fa-envelope"></i>&nbsp; Contact us</a></li>
+            <li><a href="contact.php" data-nav="contact.php"><i class="fa-solid fa-envelope"></i>&nbsp; Contact us</a></li>
         </ul>
     </div>
 
@@ -66,7 +69,7 @@
             <div class="container">
                 <span class="eyebrow reveal"><i class="fa-solid fa-headset"></i> Remote support</span>
                 <h1 class="reveal">Help over the wire — <span class="gradient-text">no waiting in line</span></h1>
-                <p class="reveal">Have an issue you can't bring in to us? Most software problems we can sort right now over a secure remote session. Pick a monthly plan or read about our <a href="visit-me.html">on-site call-out rates</a>.</p>
+                <p class="reveal">Have an issue you can't bring in to us? Most software problems we can sort right now over a secure remote session. Pick a monthly plan or read about our <a href="visit-me.php">on-site call-out rates</a>.</p>
             </div>
         </section>
 
@@ -199,7 +202,7 @@
                     </article>
                 </div>
 
-                <p class="price-note reveal">Need extra call-outs beyond what's included in your plan? See the standard rates on the <a href="visit-me.html">on-site visit page</a>.</p>
+                <p class="price-note reveal">Need extra call-outs beyond what's included in your plan? See the standard rates on the <a href="visit-me.php">on-site visit page</a>.</p>
             </div>
         </section>
 
@@ -210,7 +213,7 @@
                     <h2>Pick a plan, or just ask us first.</h2>
                     <p>If you're not sure which tier fits your usage, drop us a message describing what you typically run into — we'll point you at the right one.</p>
                     <div class="btn-row">
-                        <a href="contact.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-paper-plane"></i> Ask a question</a>
+                        <a href="contact.php" class="btn btn-primary btn-lg"><i class="fa-solid fa-paper-plane"></i> Ask a question</a>
                         <a href="#"
                            class="btn btn-outline btn-lg"
                            data-alert="Plans are billed monthly via Square. You can cancel any time from your Square subscription page. Need a custom plan? Email office@lscomputerrepair.com."
@@ -242,9 +245,9 @@
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="services.html"><i class="fa-solid fa-list-check"></i> All services</a></li>
-                        <li><a href="remote-support.html"><i class="fa-solid fa-headset"></i> Remote support</a></li>
-                        <li><a href="visit-me.html"><i class="fa-solid fa-house-laptop"></i> On-site visit</a></li>
+                        <li><a href="services.php"><i class="fa-solid fa-list-check"></i> All services</a></li>
+                        <li><a href="remote-support.php"><i class="fa-solid fa-headset"></i> Remote support</a></li>
+                        <li><a href="visit-me.php"><i class="fa-solid fa-house-laptop"></i> On-site visit</a></li>
                     </ul>
                 </div>
 
@@ -262,7 +265,7 @@
                     <h4>Group</h4>
                     <ul>
                         <li><a href="https://media.lochstudios.com/"><i class="fa-solid fa-clapperboard"></i> Media production</a></li>
-                        <li><a href="contact.html"><i class="fa-solid fa-map-pin"></i> Locations</a></li>
+                        <li><a href="contact.php"><i class="fa-solid fa-map-pin"></i> Locations</a></li>
                     </ul>
                     <img src="https://lscdn.com.au/static/logos/lochstudios/4803721/4803721.png" alt="LochStudios" style="height:60px;width:auto;margin-top:1rem;opacity:0.85;" />
                 </div>
@@ -278,6 +281,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js" defer></script>
-    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/app.js?v=<?= $js_v ?>" defer></script>
 </body>
 </html>

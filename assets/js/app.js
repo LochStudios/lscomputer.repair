@@ -163,14 +163,12 @@
     });
 
     /* ---- Mark current page in nav ---- */
-    const path = location.pathname.split('/').pop() || 'index.html';
+    const path = location.pathname.split('/').pop() || 'index.php';
     document.querySelectorAll('[data-nav]').forEach((link) => {
         const target = link.dataset.nav;
-        if (
-            target === path ||
-            (target === 'index.html' && (path === '' || path === '/' || path === 'index.html'))
-        ) {
-            link.classList.add('active');
-        }
+        const isHome =
+            target === 'index.php' &&
+            (path === '' || path === '/' || path === 'index.php' || path === 'index.html');
+        if (target === path || isHome) link.classList.add('active');
     });
 })();
